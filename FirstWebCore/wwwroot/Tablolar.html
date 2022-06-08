@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        sayfa uzerinde bir takim verileri düzenli bir tablo formatında gostermek için <br />
+        "Tablo" elementi kullanılır "tr(TableRow)" ve "td (table data)" en çok kullanılan child elemntleridir
+    </p>
+    <p>bazı ozellikleri (Attribute'leri')
+       <ul>
+           <li>Width: Tablonun genişligini belirler</li>
+           <li>height: Tablonun yuksekligini belirler</li>
+           <li>border: Tablonun iç ve dış çerçevelerini belirler</li>
+           <li>Cellspacing:hücrelerin birbirine olan uzaklıgını belirler</li>
+           <li>Cellpadding:hücrelerin içerisindeki degerlerin dış çerçeveye olan uzaklıgını belirler</li>
+           <li>Colspan: hücrelerin birleştirilmesini saglar</li>
+           <li>Rowspan: satırların birleştirilmesini saglar</li>
+           <li>Thead: table head yani tablodaki baslıkların tanımlandıgı yerdir</li>
+           <li>Tbody: table içerisinde gorunecek veriler burada tanımlanır</li>
+       </ul>
+    </p>
+    <!--<table width="100%" border="5" cellspacing="5">--> 
+    <table width="100%" border="1" cellspacing="5" cellpadding="5" ıd="PersonelTablosu">
+        <tr>
+            <td>ADI</td>
+            <td>SOYADI</td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Yılmaz</td>
+        </tr>
+        <tr>
+            <td>Ayşe</td>
+            <td>Kaya</td>
+        </tr>
+        <tr>
+            <td>Hasan</td>
+            <td>Gezer</td>
+        </tr>
+        <tr>
+            <td>Fatma</td>
+            <td>Yapıcı</td>
+        </tr>
+    </table> 
+    <hr />
+    <table border="3" cellspacing="5" cellpadding="5" ıd="ogrenciTablosu">
+        <thead>
+            <tr>
+                <th>Adi</th>
+                <th>Soyadi</th>
+                <th>TCNO</th>
+                <!-- th  td den farklı olarak veriyi ortalar ve kalın yazar -->
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <strong>
+                        bu tablo içerisinde sınıf mevcudu yer almaktadır
+                    </strong>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ali</td>
+                <td>Yılmaz</td>
+            </tr>
+            <tr>
+                <td>Ayşe</td>
+                <td>Kaya</td>
+            </tr>
+            <tr>
+                <td>Hasan</td>
+                <td>Gezer</td>
+            </tr>
+            <tr>
+                <td>Fatma</td>
+                <td>Yapıcı</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
